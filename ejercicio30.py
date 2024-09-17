@@ -1,12 +1,11 @@
-num1=float(input("ingrese un numero: "))
-num2=float(input("ingrese un numero: "))
-num3=float(input("ingrese un numero: "))
-suma=num1+num2+num3
-if suma>10:
-    raiz=float(suma**0.5)
-    print(f"la raiz cuadrada es {raiz}")
+frasco=int(input("Codigo de frascos: 1 - 2 - 3\nIngrese codigo: "))
+if frasco >=1 and frasco <=3:
+    match frasco:
+        case 1:
+            print(f"Frasco Chico")
+        case 2:
+            print(f"Frasco Mediano")
+        case 3:
+            print(f"Frasco Grande")
 else:
-    num4 = float(input("ingrese un numero: "))
-    num5 = float(input("ingrese un numero: "))
-    suma=suma+num4+num5
-    print(f"la suma de todos los numeros es {suma}")
+    print(f"Codigo no Valido")

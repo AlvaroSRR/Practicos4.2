@@ -1,9 +1,9 @@
 num1=float(input("ingrese un numero: "))
-num2=float(input("ingrese un numero negativo: "))
-num3=float(input("ingrese un numero: "))
-raiz=float
-if num2 <0:
-    raiz=(num1+num3)**0.5
-    print(f"la raiz cuadrada de la suma de los numeros {num1} y {num3} es {raiz}")
+num2=float(input("ingrese un numero: "))
+if num1!= num2:
+    if num1>num2:
+        print(f"el numero mayor es {num1}")
+    else:
+        print(f"el numero mayor es {num2}")
 else:
-    print("el segundo numero ingresado no es negativo")
+    print(f"los numeros son iguales")
